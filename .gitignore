@@ -1,0 +1,15 @@
+node_modules
+.npm-cache
+.build-tmp
+dist
+dist-ssr
+*.local
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.tsbuildinfo
+screenshots
+.edge-profile
+_qa
+产业风控系统3D建模/

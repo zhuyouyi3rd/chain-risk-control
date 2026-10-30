@@ -1,0 +1,150 @@
+:root {
+  font-family:
+    "Inter", "Segoe UI Variable", "Segoe UI", "Noto Sans SC", "Microsoft YaHei",
+    sans-serif;
+  color: #e0e0e0;
+  background: #000000;
+  color-scheme: dark;
+  font-synthesis: none;
+
+  --bg: #000000;
+  --topbar: #1e1e1e;
+  --panel: #1e1e1e;
+  --card: #2a2a2a;
+  --card-deep: #242424;
+  --border: #3a3a3a;
+  --border-soft: #303030;
+  --text: #e0e0e0;
+  --text-muted: #9e9e9e;
+  --text-faint: #70777b;
+  --accent: #82c9e0;
+  --accent-deep: #5aa8c0;
+  --accent-wash: rgba(130, 201, 224, 0.1);
+
+  --material: #4a90d9;
+  --capital: #9b59b6;
+  --tech: #3dd6c4;
+  --guarantee: #2e7d32;
+
+  --risk-low: #ffb74d;
+  --risk-medium: #ff8c42;
+  --risk-high: #e53935;
+  --risk-source: #b71c1c;
+
+  --radius: 6px;
+  --topbar-height: 56px;
+  --left-open-width: 306px;
+  --right-open-width: 344px;
+  --rail-width: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: #000000;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid rgba(130, 201, 224, 0.72);
+  outline-offset: 2px;
+}
+
+::selection {
+  color: #041014;
+  background: var(--accent);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--text-faint);
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+.icon-button {
+  display: inline-grid;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  place-items: center;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.icon-button:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.055);
+  border-color: var(--border-soft);
+}
+
+.panel-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #444444 transparent;
+}
+
+.panel-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.panel-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.panel-scroll::-webkit-scrollbar-thumb {
+  background: #444444;
+  border-radius: 999px;
+}
+
+.panel-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+@media (max-width: 1180px) {
+  :root {
+    --left-open-width: 282px;
+    --right-open-width: 320px;
+  }
+}
+
+@media (max-width: 980px) {
+  :root {
+    --left-open-width: 254px;
+    --right-open-width: 292px;
+  }
+}

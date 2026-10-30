@@ -1,0 +1,37 @@
+{
+  "name": "chain-risk-control",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc -b",
+    "test:step3": "tsx scripts/verify-step3.ts",
+    "test:step5": "tsx scripts/verify-step5.ts",
+    "test:step6": "tsx scripts/verify-step6.ts",
+    "test:2d-final": "tsx scripts/verify-2d-final.ts",
+    "test:step9a": "tsx scripts/verify-step9a.ts",
+    "test:step10b": "tsx scripts/verify-step10b.ts",
+    "test:step12a": "tsx scripts/verify-step12a.ts",
+    "data:demo": "tsx scripts/build-demo-workbook.ts",
+    "test:demo": "tsx scripts/verify-demo-workbook.ts"
+  },
+  "dependencies": {
+    "@lucide/vue": "^1.62.0",
+    "echarts": "^5.6.0",
+    "pinia": "^3.0.1",
+    "three": "^0.186.1",
+    "vue": "^3.5.13",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "tsx": "^4.23.15",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.7",
+    "vue-tsc": "^2.2.0"
+  }
+}
